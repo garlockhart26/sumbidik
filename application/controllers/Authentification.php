@@ -140,7 +140,7 @@ class Authentification extends CI_Controller
         $this->LoginModels->update($where, $data, 'log_history');
 
         $this->session->sess_destroy();
-        redirect('auth/auth_user');
+        redirect('Authentification');
     }
 
     public function blocked()
@@ -148,8 +148,8 @@ class Authentification extends CI_Controller
     }
 }
 
-/* End of file authentification.php */
-/* Location: ./application/controllers/authentification.php */
+/* End of file Authentification.php */
+/* Location: ./application/controllers/Authentification.php */
 
 /*
 Creator : Garly Nugraha

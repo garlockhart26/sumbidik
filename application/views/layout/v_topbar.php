@@ -39,10 +39,10 @@ $session = $this->db->get_where('user', $where)->row();
 
                             <li class="user-footer">
                                 <div class="pull-left">
-                                    <a href="<?php echo base_url('menu/settings') ?>" class="btn btn-default btn-flat">Profile</a>
+                                    <a href="<?php echo base_url('menu/SettingsProfile') ?>" class="btn btn-default btn-flat">Profile</a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="<?php echo base_url('auth/auth_user/logout') ?>" class="btn btn-default btn-flat logout">Sign out</a>
+                                    <a href="<?php echo base_url('Authentification/logout') ?>" class="btn btn-default btn-flat logout">Sign out</a>
                                 </div>
                             </li>
                         </ul>

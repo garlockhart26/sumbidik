@@ -22,8 +22,8 @@ class Operator extends CI_Controller
     }
 }
 
-/* End of file operator.php */
-/* Location: ./application/controllers/main/operator.php */
+/* End of file Operator.php */
+/* Location: ./application/controllers/main/Operator.php */
 
 /*
 Creator : Garly Nugraha
