@@ -59,7 +59,7 @@
                                                 <span class="label label-danger">Non Active</span>
                                             <?php endif ?>
                                         </th>
-                                        <th class="text-center" width="350px">
+                                        <th class="text-center" width="375px">
                                             <?php if ($r->role_id == '1') : ?>
                                                -
                                             <?php else : ?>
