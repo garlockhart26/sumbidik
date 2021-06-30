@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Apr 2021 pada 09.08
--- Versi server: 10.3.16-MariaDB
--- Versi PHP: 7.3.7
+-- Generation Time: Jun 30, 2021 at 03:45 PM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 8.0.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -25,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `class`
+-- Table structure for table `class`
 --
 
 CREATE TABLE `class` (
@@ -35,7 +34,7 @@ CREATE TABLE `class` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `class`
+-- Dumping data for table `class`
 --
 
 INSERT INTO `class` (`class_id`, `class_name`, `skill_competence`) VALUES
@@ -44,7 +43,7 @@ INSERT INTO `class` (`class_id`, `class_name`, `skill_competence`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `log_history`
+-- Table structure for table `log_history`
 --
 
 CREATE TABLE `log_history` (
@@ -56,7 +55,7 @@ CREATE TABLE `log_history` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `log_history`
+-- Dumping data for table `log_history`
 --
 
 INSERT INTO `log_history` (`log_id`, `user_id`, `status`, `login`, `logout`) VALUES
@@ -67,16 +66,16 @@ INSERT INTO `log_history` (`log_id`, `user_id`, `status`, `login`, `logout`) VAL
 (8, 2021151001, 'Logout', '2021-04-06 02:38:18', '2021-04-06 02:43:31'),
 (9, 2021151001, 'Logout', '2021-04-06 02:43:36', '2021-04-06 04:04:14'),
 (10, 2021151001, 'Logout', '2021-04-06 04:07:23', '2021-04-06 06:00:04'),
-(11, 1008196402, 'Logout', '2021-04-06 06:00:09', '2021-04-06 06:00:16'),
 (12, 2021151001, 'Logout', '2021-04-06 06:01:35', '2021-04-06 06:30:37'),
 (13, 2021151001, 'Logout', '2021-04-06 06:30:45', '2021-04-06 06:31:49'),
 (14, 2021151001, 'Logout', '2021-04-06 06:32:24', '2021-04-06 06:37:10'),
-(15, 2021151001, 'Logout', '2021-04-06 06:38:33', '2021-04-06 07:06:04');
+(15, 2021151001, 'Logout', '2021-04-06 06:38:33', '2021-04-06 07:06:04'),
+(16, 2021151001, 'Logout', '2021-06-30 11:50:57', '2021-06-30 12:07:11');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `menu`
+-- Table structure for table `menu`
 --
 
 CREATE TABLE `menu` (
@@ -85,7 +84,7 @@ CREATE TABLE `menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `menu`
+-- Dumping data for table `menu`
 --
 
 INSERT INTO `menu` (`menu_id`, `name_menu`) VALUES
@@ -99,7 +98,7 @@ INSERT INTO `menu` (`menu_id`, `name_menu`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `month`
+-- Table structure for table `month`
 --
 
 CREATE TABLE `month` (
@@ -108,7 +107,7 @@ CREATE TABLE `month` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `month`
+-- Dumping data for table `month`
 --
 
 INSERT INTO `month` (`month_id`, `month`) VALUES
@@ -128,7 +127,7 @@ INSERT INTO `month` (`month_id`, `month`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `role`
+-- Table structure for table `role`
 --
 
 CREATE TABLE `role` (
@@ -137,7 +136,7 @@ CREATE TABLE `role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `role`
+-- Dumping data for table `role`
 --
 
 INSERT INTO `role` (`role_id`, `name_role`) VALUES
@@ -147,7 +146,7 @@ INSERT INTO `role` (`role_id`, `name_role`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `spp`
+-- Table structure for table `spp`
 --
 
 CREATE TABLE `spp` (
@@ -157,7 +156,7 @@ CREATE TABLE `spp` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `spp`
+-- Dumping data for table `spp`
 --
 
 INSERT INTO `spp` (`spp_id`, `year`, `nominal`) VALUES
@@ -166,7 +165,7 @@ INSERT INTO `spp` (`spp_id`, `year`, `nominal`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `student`
+-- Table structure for table `student`
 --
 
 CREATE TABLE `student` (
@@ -183,7 +182,7 @@ CREATE TABLE `student` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `student`
+-- Dumping data for table `student`
 --
 
 INSERT INTO `student` (`student_id`, `nisn`, `nis`, `full_name`, `class_id`, `address`, `mobile_phone`, `image_files`, `spp_id`, `total`) VALUES
@@ -193,7 +192,7 @@ INSERT INTO `student` (`student_id`, `nisn`, `nis`, `full_name`, `class_id`, `ad
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `sub_menu`
+-- Table structure for table `sub_menu`
 --
 
 CREATE TABLE `sub_menu` (
@@ -206,25 +205,25 @@ CREATE TABLE `sub_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `sub_menu`
+-- Dumping data for table `sub_menu`
 --
 
 INSERT INTO `sub_menu` (`sub_menu_id`, `menu_id`, `title`, `url`, `icon`, `is_active`) VALUES
-(1, 1, 'Dashboard', 'main/admin', 'fa fa-dashboard', 'Y'),
-(2, 2, 'Dashboard', 'main/operator', 'fa fa-dashboard', 'Y'),
-(3, 3, 'Petugas', 'menu/user', 'fa fa-user', 'Y'),
-(4, 3, 'Siswa', 'menu/student', 'fa fa-user', 'Y'),
-(5, 3, 'Kelas', 'menu/classs', 'fa fa-bank', 'Y'),
-(6, 3, 'SPP', 'menu/spp', 'fa fa-money', 'Y'),
-(7, 4, 'Entri Transaksi', 'menu/transaction', 'fa fa-plus', 'Y'),
-(8, 4, 'History Transaksi', 'menu/history', 'fa fa-history', 'Y'),
-(9, 5, 'Generate Laporan', 'menu/report', 'fa fa-book', 'Y'),
-(10, 6, 'Ubah Password', 'menu/settings/password', 'fa fa-key', 'Y');
+(1, 1, 'Dashboard', 'main/Administrator', 'fa fa-dashboard', 'Y'),
+(2, 2, 'Dashboard', 'main/Operator', 'fa fa-dashboard', 'Y'),
+(3, 3, 'Petugas', 'menu/User', 'fa fa-user', 'Y'),
+(4, 3, 'Siswa', 'menu/Student', 'fa fa-user', 'Y'),
+(5, 3, 'Kelas', 'menu/Classs', 'fa fa-bank', 'Y'),
+(6, 3, 'SPP', 'menu/SPP', 'fa fa-money', 'Y'),
+(7, 4, 'Entri Transaksi', 'menu/Transaction', 'fa fa-plus', 'Y'),
+(8, 4, 'History Transaksi', 'menu/History', 'fa fa-history', 'Y'),
+(9, 5, 'Generate Laporan', 'menu/Report', 'fa fa-book', 'Y'),
+(10, 6, 'Ubah Password', 'menu/SettingsPassword', 'fa fa-key', 'Y');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `transactions`
+-- Table structure for table `transactions`
 --
 
 CREATE TABLE `transactions` (
@@ -238,29 +237,10 @@ CREATE TABLE `transactions` (
   `amount_paid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data untuk tabel `transactions`
---
-
-INSERT INTO `transactions` (`transaction_id`, `user_id`, `nisn`, `payment_date`, `month_paid`, `year_paid`, `spp_id`, `amount_paid`) VALUES
-(9, 2021151001, '0000000000', '2021-04-06', '1', '2018', 10, 175000),
-(10, 2021151001, '0000000000', '2021-04-06', '1', '2018', 10, 175000),
-(11, 2021151001, '0000000000', '2021-04-06', '1', '2018', 10, 175000),
-(12, 2021151001, '0000000000', '2021-04-06', '1', '2018', 10, 175000),
-(13, 2021151001, '0000000000', '2021-04-06', '1', '2018', 10, 175000),
-(14, 2021151001, '0000000000', '2021-04-06', '1', '2018', 10, 175000),
-(15, 2021151001, '0000000000', '2021-04-06', '1', '2018', 10, 175000),
-(16, 2021151001, '0000000000', '2021-04-06', '1', '2018', 10, 175000),
-(17, 2021151001, '0000000000', '2021-04-06', '1', '2018', 10, 175000),
-(18, 2021151001, '0000000000', '2021-04-06', '1', '2018', 10, 175000),
-(19, 2021151001, '0000000000', '2021-04-06', '1', '2018', 10, 175000),
-(20, 2021151001, '0000000000', '2021-04-06', '1', '2018', 10, 175000),
-(21, 2021151001, '0035992116', '2021-04-06', '1', '2018', 10, 175000);
-
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -277,17 +257,17 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`user_id`, `username`, `password`, `full_name`, `image_files`, `role_id`, `attempt`, `is_active`, `create_at`, `update_at`) VALUES
-(1008196402, 'daffafa', '$2y$10$KRc17u5XcmUQ2R5i9BIdNuMAuVlFOXVNUvZbM0gW6.Or4wdHrRbQW', 'Daffa Fadhil A', 'assets/images/profile/1008196402.jpg', 2, 0, 'Y', '2021-04-06 02:46:05', '2021-04-06 06:39:57'),
-(2021151001, 'admin', '$2y$10$RJp/oNhC47EVjSoEtUyJeeg50yKryZ35UvZcqPE5drp0r4s9vQp06', 'Garly Nugraha', 'assets/images/profile/1008196401.jpg', 1, 0, 'Y', '2021-04-06 00:57:40', '2021-04-06 06:01:35');
+(1008196402, 'lexianus', '$2y$10$zQ9fjJ.9ASRiO8CCyFRLwuE7gdYJfTK0g/c7yKwByIWsfzF8.xFZq', 'Lexianus Razoric', 'assets/images/profile/1008196402.png', 2, 0, 'Y', '2021-06-30 11:53:47', '2021-06-30 11:53:47'),
+(2021151001, 'admin', '$2y$10$RJp/oNhC47EVjSoEtUyJeeg50yKryZ35UvZcqPE5drp0r4s9vQp06', 'Administrator', 'assets/images/profile/1008196401.png', 1, 0, 'Y', '2021-04-06 00:57:40', '2021-06-30 11:46:28');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user_access`
+-- Table structure for table `user_access`
 --
 
 CREATE TABLE `user_access` (
@@ -297,7 +277,7 @@ CREATE TABLE `user_access` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `user_access`
+-- Dumping data for table `user_access`
 --
 
 INSERT INTO `user_access` (`user_access_id`, `role_id`, `menu_id`) VALUES
@@ -315,44 +295,44 @@ INSERT INTO `user_access` (`user_access_id`, `role_id`, `menu_id`) VALUES
 --
 
 --
--- Indeks untuk tabel `class`
+-- Indexes for table `class`
 --
 ALTER TABLE `class`
   ADD PRIMARY KEY (`class_id`);
 
 --
--- Indeks untuk tabel `log_history`
+-- Indexes for table `log_history`
 --
 ALTER TABLE `log_history`
   ADD PRIMARY KEY (`log_id`),
   ADD KEY `user_id` (`user_id`);
 
 --
--- Indeks untuk tabel `menu`
+-- Indexes for table `menu`
 --
 ALTER TABLE `menu`
   ADD PRIMARY KEY (`menu_id`);
 
 --
--- Indeks untuk tabel `month`
+-- Indexes for table `month`
 --
 ALTER TABLE `month`
   ADD PRIMARY KEY (`month_id`);
 
 --
--- Indeks untuk tabel `role`
+-- Indexes for table `role`
 --
 ALTER TABLE `role`
   ADD PRIMARY KEY (`role_id`);
 
 --
--- Indeks untuk tabel `spp`
+-- Indexes for table `spp`
 --
 ALTER TABLE `spp`
   ADD PRIMARY KEY (`spp_id`);
 
 --
--- Indeks untuk tabel `student`
+-- Indexes for table `student`
 --
 ALTER TABLE `student`
   ADD PRIMARY KEY (`student_id`),
@@ -360,28 +340,28 @@ ALTER TABLE `student`
   ADD KEY `spp_id` (`spp_id`);
 
 --
--- Indeks untuk tabel `sub_menu`
+-- Indexes for table `sub_menu`
 --
 ALTER TABLE `sub_menu`
   ADD PRIMARY KEY (`sub_menu_id`),
   ADD KEY `menu_id` (`menu_id`);
 
 --
--- Indeks untuk tabel `transactions`
+-- Indexes for table `transactions`
 --
 ALTER TABLE `transactions`
   ADD PRIMARY KEY (`transaction_id`),
   ADD KEY `user_id` (`user_id`);
 
 --
--- Indeks untuk tabel `user`
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`),
   ADD KEY `role_id` (`role_id`);
 
 --
--- Indeks untuk tabel `user_access`
+-- Indexes for table `user_access`
 --
 ALTER TABLE `user_access`
   ADD PRIMARY KEY (`user_access_id`),
@@ -389,100 +369,100 @@ ALTER TABLE `user_access`
   ADD KEY `menu_id` (`menu_id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `class`
+-- AUTO_INCREMENT for table `class`
 --
 ALTER TABLE `class`
   MODIFY `class_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2021151052;
 
 --
--- AUTO_INCREMENT untuk tabel `log_history`
+-- AUTO_INCREMENT for table `log_history`
 --
 ALTER TABLE `log_history`
-  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT untuk tabel `menu`
+-- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
   MODIFY `menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT untuk tabel `month`
+-- AUTO_INCREMENT for table `month`
 --
 ALTER TABLE `month`
   MODIFY `month_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT untuk tabel `role`
+-- AUTO_INCREMENT for table `role`
 --
 ALTER TABLE `role`
   MODIFY `role_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `spp`
+-- AUTO_INCREMENT for table `spp`
 --
 ALTER TABLE `spp`
   MODIFY `spp_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT untuk tabel `sub_menu`
+-- AUTO_INCREMENT for table `sub_menu`
 --
 ALTER TABLE `sub_menu`
   MODIFY `sub_menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
--- AUTO_INCREMENT untuk tabel `transactions`
+-- AUTO_INCREMENT for table `transactions`
 --
 ALTER TABLE `transactions`
   MODIFY `transaction_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
--- AUTO_INCREMENT untuk tabel `user_access`
+-- AUTO_INCREMENT for table `user_access`
 --
 ALTER TABLE `user_access`
   MODIFY `user_access_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `log_history`
+-- Constraints for table `log_history`
 --
 ALTER TABLE `log_history`
   ADD CONSTRAINT `log_history_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `student`
+-- Constraints for table `student`
 --
 ALTER TABLE `student`
   ADD CONSTRAINT `student_ibfk_1` FOREIGN KEY (`spp_id`) REFERENCES `spp` (`spp_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `student_ibfk_2` FOREIGN KEY (`class_id`) REFERENCES `class` (`class_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `sub_menu`
+-- Constraints for table `sub_menu`
 --
 ALTER TABLE `sub_menu`
   ADD CONSTRAINT `sub_menu_ibfk_1` FOREIGN KEY (`menu_id`) REFERENCES `menu` (`menu_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `transactions`
+-- Constraints for table `transactions`
 --
 ALTER TABLE `transactions`
   ADD CONSTRAINT `transactions_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `user`
+-- Constraints for table `user`
 --
 ALTER TABLE `user`
   ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `role` (`role_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `user_access`
+-- Constraints for table `user_access`
 --
 ALTER TABLE `user_access`
   ADD CONSTRAINT `user_access_ibfk_1` FOREIGN KEY (`menu_id`) REFERENCES `menu` (`menu_id`) ON DELETE CASCADE ON UPDATE CASCADE,
