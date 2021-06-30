@@ -16,7 +16,7 @@ class Authentification extends CI_Controller
         // If you already have a Session
         if ($this->session->userdata('username')) {
             if ($this->session->userdata('role_id') == 1) {
-                redirect('main/Admin');
+                redirect('main/Administrator');
             } else {
                 redirect('main/Operator');
             }
@@ -81,9 +81,9 @@ class Authentification extends CI_Controller
 
                     // Check what the User Role is .....
                     if ($login_user->role_id == 1) {
-                        redirect('main/admin');
+                        redirect('main/Administrator');
                     } else {
-                        redirect('main/operator');
+                        redirect('main/Operator');
                     }
                 } else {
                     // Check if the User Login attempts are more than 3

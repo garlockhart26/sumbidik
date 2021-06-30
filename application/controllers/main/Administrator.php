@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Admin extends CI_Controller
+class Administrator extends CI_Controller
 {
     public function __construct()
     {
@@ -22,8 +22,8 @@ class Admin extends CI_Controller
     }
 }
 
-/* End of file admin.php */
-/* Location: ./application/controllers/main/admin.php */
+/* End of file Administrator.php */
+/* Location: ./application/controllers/main/Administrator.php */
 
 /*
 Creator : Garly Nugraha
