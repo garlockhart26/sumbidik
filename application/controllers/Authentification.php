@@ -6,9 +6,6 @@ class Authentification extends CI_Controller
     function __construct()
     {
         parent::__construct();
-
-        // Call Model
-        $this->load->model('LoginModels');
     }
     
     public function index()
@@ -16,9 +13,9 @@ class Authentification extends CI_Controller
         // If you already have a Session
         if ($this->session->userdata('username')) {
             if ($this->session->userdata('role_id') == 1) {
-                redirect('main/Administrator');
+                redirect('menu/dashboard/Administrator');
             } else {
-                redirect('main/Operator');
+                redirect('menu/dashboard/Operator');
             }
         }
 
@@ -81,9 +78,9 @@ class Authentification extends CI_Controller
 
                     // Check what the User Role is .....
                     if ($login_user->role_id == 1) {
-                        redirect('main/Administrator');
+                        redirect('menu/dashboard/Administrator');
                     } else {
-                        redirect('main/Operator');
+                        redirect('menu/dashboard/Operator');
                     }
                 } else {
                     // Check if the User Login attempts are more than 3

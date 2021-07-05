@@ -7,10 +7,6 @@ class Report extends CI_Controller
     {
         parent::__construct();
 
-        // Model
-        $this->load->model('ReportModels');
-
-        // Pembatas Hak Akses
         is_logged_in();
     }
 

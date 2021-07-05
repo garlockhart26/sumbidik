@@ -7,11 +7,6 @@ class Transaction extends CI_Controller
     {
         parent::__construct();
 
-        // Model
-        $this->load->model('DataModels');
-        $this->load->model('TransactionModels');
-
-        // Pembatas Hak Akses
         is_logged_in();
     }
 

@@ -7,10 +7,6 @@ class Operator extends CI_Controller
     {
         parent::__construct();
 
-        // Call Model
-        $this->load->model('DataModels');
-
-        // Access Rights Limiter
         is_logged_in();
     }
 

@@ -7,12 +7,6 @@ class User extends CI_Controller
     {
         parent::__construct();
 
-        // Call Model
-        $this->load->model('DataModels');
-        $this->load->model('UserModels');
-        $this->load->model('CodeModels');
-
-        // Access Rights Limiter
         is_logged_in();
     }
 

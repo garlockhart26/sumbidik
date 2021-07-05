@@ -7,10 +7,6 @@ class SPP extends CI_Controller
     {
         parent::__construct();
 
-        // Model
-        $this->load->model('DataModels');
-
-        // Pembatas Hak Akses
         is_logged_in();
     }
 

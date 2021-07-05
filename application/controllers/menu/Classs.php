@@ -7,11 +7,6 @@ class Classs extends CI_Controller
     {
         parent::__construct();
 
-        // Call Model
-        $this->load->model('DataModels');
-        $this->load->model('CodeModels');
-
-        // Access Rights Limiter
         is_logged_in();
     }
 

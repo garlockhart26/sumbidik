@@ -7,12 +7,6 @@ class Student extends CI_Controller
     {
         parent::__construct();
 
-        // Model
-        $this->load->model('DataModels');
-        $this->load->model('StudentModels');
-        $this->load->model('CodeModels');
-
-        // Pembatas Hak Akses
         is_logged_in();
     }
 

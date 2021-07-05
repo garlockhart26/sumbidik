@@ -7,10 +7,6 @@ class History extends CI_Controller
     {
         parent::__construct();
 
-        // Call Model
-        $this->load->model('TransactionModels');
-
-        // Access Rights Limiter
         is_logged_in();
     }
 
