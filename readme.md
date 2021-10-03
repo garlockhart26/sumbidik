@@ -1,6 +1,6 @@
 ## 🤔 Apa itu Sumbidik?
 
-Sumbidik merupakan Website Pembayaran Donasi Pengembangan atau Pembinaan Pendidikan yang dibuat untuk memudahkan administrasi keuangan SPP yang berada dilingkungan sekolah. dikembangkan oleh Garly Nugraha menggunakan Codeigniter 3.x
+Sumbidik merupakan Website Pembayaran Donasi Pengembangan atau Pembinaan Pendidikan yang dibuat untuk memudahkan administrasi keuangan SPP yang berada dilingkungan sekolah. dikembangkan menggunakan Codeigniter 3.x
 
 ## 🧐 Persyaratan yang dibutuhkan
 
