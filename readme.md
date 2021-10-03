@@ -6,7 +6,7 @@ Sumbidik merupakan Website Pembayaran Donasi Pengembangan atau Pembinaan Pendidi
 
 - PHP Versi 5 ke-atas
 - Web Browser (Google Chrome, Firefox, Microsoft Edge & Lainnya)
-- XAMPP (Atau software web server lainnya)
+- XAMPP atau software web server lainnya
 
 ## 🧑 Author <a href="https://www.garlockhart.com">Garly Nugraha</a>
 
